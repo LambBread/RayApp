@@ -9,14 +9,6 @@ This is a library adding a class "App" for [raylib](https://github.com/raysan5/r
 class MainApp : public rayapp::App
 {
 public:
-    MainApp()
-    {
-
-    }
-    ~MainApp()
-    {
-
-    }
     void OnCreate() override
     {
 

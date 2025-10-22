@@ -2,21 +2,11 @@
 class MainApp : public rayapp::App
 {
 public:
-    MainApp()
-    {
-
-    }
-    ~MainApp()
-    {
-
-    }
     void OnCreate() override
     {
-
     }
     void OnUpdate(float fDeltaTime) override
-    {
-        
+    {   
     }
     void OnDraw() override
     {
