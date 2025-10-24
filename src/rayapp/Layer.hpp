@@ -29,7 +29,8 @@ namespace rayapp
          *
          * Can be overridden with custom code,
          * but overriding is optional. Runs before
-         * InitWindow() is called.
+         * InitWindow() is called. Useful for adding
+         * to m_Layers before an app runs.
          * 
          * @return void This function does not return a value.
          */
@@ -56,12 +57,18 @@ namespace rayapp
         virtual void OnAfterDestroy();
         /**
          * @brief Runs when Enable() is called.
+         * 
+         * Can be overridden with custom code, but
+         * overriding is optional. Runs when Enable() is called.
          *
          * @return void This function does not return a value.
          */
         virtual void OnEnable();
         /**
          * @brief Runs when Disable() is called.
+         *
+         * Can be overridden with custom code,
+         * but overriding is optional. Runs when Disable() is called.
          *
          * @return void This function does not return a value.
          */

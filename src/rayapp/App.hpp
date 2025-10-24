@@ -9,6 +9,7 @@
 #include "Layer.hpp"
 #include <string>
 #include <vector>
+#include <memory>
 #include <raylib.h>
 namespace rayapp
 {
@@ -45,7 +46,7 @@ namespace rayapp
          */
         void Run(int width, int height, const std::string& title);
     protected:
-        std::vector<Layer*> m_Layers; ///<Layers that may be used in derived classes.
+        std::vector<std::unique_ptr<Layer>> m_Layers; ///<Layers that may be used in derived classes.
         App() = default; ///<Constructor for App. Not intended for construction.
     };
 }
